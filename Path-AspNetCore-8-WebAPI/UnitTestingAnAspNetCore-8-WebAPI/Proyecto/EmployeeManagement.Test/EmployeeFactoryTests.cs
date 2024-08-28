@@ -17,7 +17,7 @@ namespace EmployeeManagement.Test
 		public void CreateEmployee_ConstructInternalEmployee_SalaryMustBe2500()
 		{
 			// Arrange
-			var employeeFactory = new EmployeeFactory();
+			var employeeFactory = new EmployeeFactory(); 
 
 			// Act
 			var employee = (InternalEmployee)employeeFactory.CreateEmployee("John", "Doe");
