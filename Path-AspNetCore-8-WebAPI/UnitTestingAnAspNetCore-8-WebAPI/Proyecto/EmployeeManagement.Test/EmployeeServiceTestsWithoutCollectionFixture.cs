@@ -10,12 +10,11 @@ namespace EmployeeManagement.Test;
 /*
  Esta interfaz IClassFixture se utiliza para compartir el mismo objeto de la clase de prueba entre todas las pruebas en la clase de prueba.
  */
-[Collection("EmployeeServiceCollection")]
-public class EmployeeServiceTests //: IClassFixture<EmployeeServiceFixture>	
+public class EmployeeServiceTestsWithoutCollectionFixture : IClassFixture<EmployeeServiceFixture>	
 {
 	private readonly EmployeeServiceFixture _employeeServiceFixture;
 
-	public EmployeeServiceTests(EmployeeServiceFixture employeeServiceFixture)
+	public EmployeeServiceTestsWithoutCollectionFixture(EmployeeServiceFixture employeeServiceFixture)
 	{
 		_employeeServiceFixture = employeeServiceFixture;
 	}
