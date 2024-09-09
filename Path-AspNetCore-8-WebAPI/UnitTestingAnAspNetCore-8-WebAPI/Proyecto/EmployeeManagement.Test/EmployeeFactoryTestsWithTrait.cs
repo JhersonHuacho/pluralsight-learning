@@ -24,7 +24,7 @@ namespace EmployeeManagement.Test
 		// CreateEmployee => la descripción de la unidad que estamos probando
 		// ConstructInternalEmployee => el escenario de la prueba / para la acción que probamos
 		// SalaryMustBe2500 => el resultado esperado de la prueba
-		[Fact]
+		[Fact(Skip = "Skipping this one for demo reasons.")]
 		[Trait("Category", "EmployeeFactory_CreateEmployee_Salary")]
 		public void CreateEmployee_ConstructInternalEmployee_SalaryMustBe2500()
 		{
